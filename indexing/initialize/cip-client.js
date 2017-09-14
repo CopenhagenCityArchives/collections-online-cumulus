@@ -9,7 +9,5 @@ const cip = require('../../services/cip');
  */
 
 module.exports = state => {
-  return cip.initSession().then(() => {
-    return state;
-  });
+  return cip.initSession();
 };

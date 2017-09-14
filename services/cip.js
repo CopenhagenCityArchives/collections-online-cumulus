@@ -24,6 +24,7 @@ cipClient.initSession = function(forceInit) {
         throw err;
       }
     });
+    //return this
   } else {
     return new Q(this);
   }

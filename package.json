@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "agentkeepalive": "~2.0.3",
-    "cip-js": "git+https://github.com/NationalMuseumofDenmark/cip.js.git",
+    "cip-js": "git+https://github.com/NationalMuseumofDenmark/cip.js.git#cumulus-http-basic",
     "iconv": "~2.2.0",
     "lodash": "~4.5.0",
     "q": "~1.4.1",
