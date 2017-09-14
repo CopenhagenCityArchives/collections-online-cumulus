@@ -31,6 +31,8 @@ function saveChangesToCIP(catalogAlias, items) {
 }
 
 function getResultPage(result, index, count) {
+
+  console.log('getResultPage', result)
   var options = {
     collection: result.collection_id,
     startindex: index,
@@ -61,6 +63,7 @@ function getResultPage(result, index, count) {
  */
 function processResultPage(result, context, pageIndex) {
   const collection = context.collection;
+  console.log(collection)
 
   var totalPages = Math.ceil(result.total_rows / context.pageSize);
   const progress = '[' + (pageIndex + 1) + '/' + totalPages + ']';
@@ -203,6 +206,7 @@ function processResultPages(result, context) {
 
 function processResult(context, query, result) {
   console.log('Processing a result of ' + result.total_rows + ' assets');
+  console.log(result)
   return processResultPages(result, context);
 }
 
